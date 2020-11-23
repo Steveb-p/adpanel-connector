@@ -1,0 +1,39 @@
+{
+    "name": "steveb-p/adpanel-connector",
+    "description": "Provides client helper classes for AdStats event registration service",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "symfony/http-client": "^5.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Paweł Niedzielski",
+            "email": "pniedzielski@enzode.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Enzode\\AdPanelConnector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Enzode\\AdPanelConnector\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "symfony/phpunit-bridge": "^5.1",
+        "symfony/var-dumper": "^5.1"
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml"
+    }
+}
